@@ -1,0 +1,27 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoHire AI Copilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="extension-container">
+    <header class="header">
+      <div class="logo-block">
+        <div class="logo">A</div>
+        <div>
+          <h3>AutoHire AI</h3>
+          <p>Local Copilot Active</p>
+        </div>
+      </div>
+      <div id="connection-status" class="status-indicator offline">Offline</div>
+    </header>
+
+    <main class="content">
+      <div class="job-card">
+        <div class="card-header">
+          <span class="badge" id="detected-platform">Analyzing Page...</span>
+        </div>
+        <h4 id="job-title" class="title">Navigate query...</h4>
+        <p id="company-name" class="subtitle">-</p>
+        
+        <div class="matching-meter">
+          <div class="meter-info">
+            <span>Semantic Match</span>
+            <strong id="match-pct">-%</strong>
+          </div>
+          <div class="meter-track">
+            <div id="meter-fill" class="meter-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-zone">
+        <button id="btn-scrape" class="btn btn-secondary" disabled>Scrape Job Spec</button>
+        <button id="btn-autofill" class="btn btn-primary" disabled>Autofill Application</button>
+      </div>
+
+      <div id="status-console" class="console">
+        <p class="log">Console initialized. Ready for commands...</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a href="http://localhost:3000" target="_blank" class="footer-link">Open Web Dashboard</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
